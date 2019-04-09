@@ -1,2 +1,4 @@
 # Project-1
-Game
+Game: 
+
+Trello link --> https://trello.com/b/QWwmlbEY/project-1-planning
