@@ -2,7 +2,13 @@
 
 
 /* Landing Page */
-
+body{
+    background-image: url("Images/deion.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
 .landingTitle{
     display: flex;
     flex-direction: column;
@@ -16,17 +22,30 @@
     margin-top: 20vh;
     border: solid black
 }
+.newGameButton{
+    position:relative;
+    background-color: crimson;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px white;
+    font-size: 20px;
+    height: 10vh;
+    width: 20vw;
+    transition: .5s ease;
+    top: -200px;
+    left: 565px;
+    right: -520px;
+    bottom: -191px;
+    /* padding: 20px; */
+}
 .playerSelector{
-    border: solid black;
     display: inline-flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: stretch;
+    justify-content: space-between;
     flex-direction: row;
-    padding: 0%;
+    margin-top: -20vh;
     width: 30vw;
-    margin-left: 34vw;
+    margin-left: 14vw;
 }
 .player1{
     border: solid black;
