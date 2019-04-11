@@ -2,11 +2,7 @@
 
 
 /* Landing Page */
-body{
-    background-image: url("");
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
+
 .landingTitle{
     display: flex;
     flex-direction: column;
@@ -46,13 +42,30 @@ body{
 /* Theme 1 Page */
 
 .actionButtons{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
     width: 100vw;
 }
-.btn{
+#deal{
     display: flex;
-    height: 5vh; 
+    height: 5vh;
     width: 10vw;
+}
+#hit{
+    display: flex;
+    height: 5vh;
+    width: 10vw;
+}
+#stand{
+    display: flex;
+    height: 5vh;
+    width: 10vw;
+
+}
+#wager{
+    display: flex;
+    height: 5vh;
+    width: 20vw;
 }
