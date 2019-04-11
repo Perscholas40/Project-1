@@ -3,11 +3,9 @@
 
 /* Landing Page */
 body{
-    background-image: url("Images/deion.jpeg");
+    background-image: url("");
     background-size: cover;
-    background-repeat: no-repeat;
-    
-    
+    background-repeat: no-repeat; 
 }
 .landingTitle{
     display: flex;
@@ -16,42 +14,45 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 10vh; 
+    height: 20vh; 
     padding: 0%;
-    margin: 25%;
     margin-top: 20vh;
     border: solid black
 }
-.newGameButton{
-    position:relative;
-    background-color: crimson;
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 5px 5px white;
-    font-size: 20px;
-    height: 10vh;
-    width: 20vw;
-    transition: .5s ease;
-    top: -200px;
-    left: 565px;
-    right: -520px;
-    bottom: -191px;
-    /* padding: 20px; */
-}
-.playerSelector{
+
+.themeSelector{
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
     flex-direction: row;
-    margin-top: -20vh;
+    margin-top: -400px;
+    width: 100vw;
+}
+.theme1{
+    display: flex;
+    border: solid black;
+    height: 40vh;
     width: 30vw;
-    margin-left: 14vw;
 }
-.player1{
+.theme2{
+    display: flex; 
     border: solid black;
-    padding: 20%;
+    margin-left: 10px;
+    height: 40vh;
+    width: 30vw;
 }
-.player2{
-    border: solid black;
-    padding: 20%;
+
+/* Theme 1 Page */
+
+.actionButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+.btn{
+    display: flex;
+    height: 5vh; 
+    width: 10vw;
 }
