@@ -2,6 +2,27 @@
 
 
 /* Landing Page */
+.titleBox{
+    display: flex;
+    border: solid black;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    padding-bottom: 5px;
+
+}
+.landingBackground{
+    display: flex;
+    background-image: url("Images/atlanta2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 80vw;
+    border-radius: 10px;
+    margin-bottom: 10px;
+   
+    
+}
 
 .landingTitle{
     display: flex;
@@ -10,7 +31,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 20vh; 
+    height: 30vh; 
     padding: 0%;
     margin-top: 20vh;
     border: solid black
@@ -22,21 +43,26 @@
     justify-content: center;
     align-content: center;
     flex-direction: row;
-    margin-top: -400px;
+    margin-top: 0px;
     width: 100vw;
+    height: 40vh;
+    border: solid black;
+    background-color: black;
 }
 .theme1{
     display: flex;
-    border: solid black;
-    height: 40vh;
+    border: solid white;
+    height: 30vh;
     width: 30vw;
+    border-radius: 10px;
 }
 .theme2{
     display: flex; 
-    border: solid black;
+    border: solid white;
     margin-left: 10px;
-    height: 40vh;
+    height: 30vh;
     width: 30vw;
+    border-radius: 10px;
 }
 
 /* Theme 1 Page */
@@ -50,18 +76,35 @@
 }
 #deal{
     display: flex;
+    justify-content: center;
+    font-size: 20px;
     height: 5vh;
     width: 10vw;
 }
 #hit{
     display: flex;
+    justify-content: center;
+    font-size: 20px;
     height: 5vh;
     width: 10vw;
 }
 #stand{
     display: flex;
+    justify-content: center;
+    font-size: 20px;
     height: 5vh;
     width: 10vw;
+
+}
+
+.cardTable{
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    height: 80vh;
+    width: 70vw;
+    margin-left: 180px;
+    border-radius: 30%;
 
 }
 #wager{
