@@ -14,18 +14,24 @@
 body{
     background-color: grey;
 }
-.landingText{
+.titleBox{
     display: flex;
     background-image: url("Images/atlanta2.gif");
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
     width: 80vw;
+    margin-left: 125px;
     border-radius: 10px;
     margin-bottom: 10px;
     text-align: center;
     font-size: 70px;
     color: white; 
+}
+.blackJack{
+    display: flex;
+    font-style: italic;
+    font-size: 120px;
 }
 
 .landingTitle{
@@ -189,6 +195,5 @@ body{
     width: 70vw;
     margin-left: 180px;
     border-radius: 30%;
-
 }
 
