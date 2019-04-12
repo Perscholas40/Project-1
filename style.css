@@ -4,14 +4,17 @@
 /* Landing Page */
 .titleBox{
     display: flex;
-    border: solid black;
     justify-content: center;
-    background-color: black;
+    background-color: grey;
     width: 100vw;
     padding-bottom: 5px;
 
+
 }
-.landingBackground{
+body{
+    background-color: grey;
+}
+.landingText{
     display: flex;
     background-image: url("Images/atlanta2.gif");
     background-size: cover;
@@ -20,8 +23,9 @@
     width: 80vw;
     border-radius: 10px;
     margin-bottom: 10px;
-   
-    
+    text-align: center;
+    font-size: 70px;
+    color: white; 
 }
 
 .landingTitle{
@@ -40,40 +44,72 @@
 .themeSelector{
     display: inline-flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-direction: row;
     margin-top: 0px;
     width: 100vw;
     height: 40vh;
-    border: solid black;
-    background-color: black;
+    background-color: grey;
+    
 }
 .theme1{
     display: flex;
-    border: solid white;
+    background-image: url("Images/falcons45.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 30vh;
-    width: 30vw;
+    width: 22vw;
     border-radius: 10px;
+    margin-right: 5px;
+    border: solid white;
 }
 .theme2{
     display: flex; 
-    border: solid white;
-    margin-left: 10px;
+    background-image: url("Images/braves.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin-left: 10px; */
     height: 30vh;
-    width: 30vw;
+    width: 25vw;
     border-radius: 10px;
+    border: solid white;
+}
+.theme3{
+    display: flex;
+    background-image: url("Images/united.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 25vw;
+    border-radius: 10px;
+    border: solid white;
+
+
+}
+.theme4{
+    display: flex;
+    background-image: url("Images/hawks.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 22vw;
+    border-radius: 10px;
+    border: solid white;
+
+
 }
 
-/* Theme 1 Page */
+/* Action Buttons For Playing on Pages*/
 
 .actionButtons{
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 100vw;
+    width: 70vw;
 }
+
 #deal{
     display: flex;
     justify-content: center;
@@ -94,12 +130,45 @@
     font-size: 20px;
     height: 5vh;
     width: 10vw;
-
 }
 
-.cardTable{
+/* Card Tables */
+
+.cardTableFalcons{
     display: flex;
     justify-content: center;
+    background-image: url("Images/falconsLogo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid black;
+    padding-right: 90px;
+    height: 80vh;
+    width: 70vw;
+    margin-left: 180px;
+    border-radius: 30%;
+
+}
+.cardTableBraves{
+    display: flex;
+    justify-content: center;
+    background-image: url("Images/bravesLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid black;
+    padding-right: 90px;
+    height: 80vh;
+    width: 70vw;
+    margin-left: 180px;
+    border-radius: 30%;
+
+}
+.cardTableUnited{
+    display: flex;
+    justify-content: center;
+    background-image: url("Images/unitedLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 90px;
     border: solid black;
     height: 80vh;
     width: 70vw;
@@ -107,8 +176,19 @@
     border-radius: 30%;
 
 }
-#wager{
+
+.cardTableHawks{
     display: flex;
-    height: 5vh;
-    width: 20vw;
+    justify-content: center;
+    background-image: url("Images/hawksLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid black;
+    padding-right: 90px;
+    height: 80vh;
+    width: 70vw;
+    margin-left: 180px;
+    border-radius: 30%;
+
 }
+
