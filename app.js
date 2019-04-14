@@ -15,6 +15,7 @@ var cardDeck = [2,3,4,5,6,7,8,9,10,10,10,10,11,
                 2,3,4,5,6,7,8,9,10,10,10,10,11,
                 2,3,4,5,6,7,8,9,10,10,10,10,11,
                 2,3,4,5,6,7,8,9,10,10,10,10,11,]
+let suits = ['Clubs', 'Diamonds', 'Spades', 'Hearts']
 var playerHand;
 var dealerHand;
 
@@ -40,6 +41,16 @@ function handTotal(hand){
     return total;
 }
 
+// Hit function
+// function hit(){
+//     playerHand.push(drawCard(cardDeck));
+//     console.log('New hand: ' + playerHand)
+//     if(handTotal(playerHand) > 21){
+//         console.log("Bust")
+//     }
+// }
+
+// document.getElementsByClassName('btn').addEventListener("click", hit());
 
 
 
