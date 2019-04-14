@@ -144,7 +144,7 @@ body{
 .cardTableFalcons{
     display: flex;
     justify-content: center;
-    background-image: url("Images/falconsLogo.jpeg");
+    /* background-image: url("Images/falconsLogo.jpeg"); */
     background-size: cover;
     background-repeat: no-repeat;
     border: solid black;
