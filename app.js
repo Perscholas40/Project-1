@@ -114,7 +114,7 @@ function hit(){
     playerHand.push(drawCard(cardDeck));
         document.onclick.getElementByID("dealerHand").innerHTML = drawCard(cardDeck);
     if(handTotal(playerHand) > 21){
-        document.getElementByID("dealerHand").innerHTML = ("You Bust");
+        document.getElementByID("dealerHand").innerHTML = ("Dealer Bust");
     }
 }
 
