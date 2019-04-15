@@ -15,7 +15,7 @@ var cardDeck = [2,3,4,5,6,7,8,9,10,10,10,10,11,
                 2,3,4,5,6,7,8,9,10,10,10,10,11,
                 2,3,4,5,6,7,8,9,10,10,10,10,11,
                 2,3,4,5,6,7,8,9,10,10,10,10,11,]
-var playerHand;
+
 // Clubs;
 cardDeck[0].src = 'Images/2C.jpg';
 cardDeck[1].src = 'Images/3C.jpg';
@@ -73,12 +73,18 @@ cardDeck[49].src = 'Images/QS.jpg';
 cardDeck[50].src = 'Images/KS.jpg';
 cardDeck[51].src = 'Images/AS.jpg';
 
+// var playerHand;
+let playerHand = [];
+let dealerHand = [];
 
 
 // Grabs random cards from card deck array
 function drawCard(cardDeck){
     let randomCards = Math.floor(cardDeck.length * Math.random());
     return cardDeck[randomCards];
+    function getHand(cardDeck){
+        document.getElementsByClassName("dealerHand").innerHTML = drawCard(cardDeck);
+    }
 }
 //Makes beginning hand for dealer and player
 function gameBegin(){
@@ -95,16 +101,14 @@ function handTotal(hand){
     return total;
 }
 
-// Hit function
-function hit(){
+// Hit Function
+    function hit(){
     playerHand.push(drawCard(cardDeck));
-    console.log('New hand: ' + playerHand)
+        document.onclick.getElementsByClassName("dealerHand").innerHTML = drawCard(cardDeck);
     if(handTotal(playerHand) > 21){
-        console.log("Bust")
+        document.getElementsByClassName("dealerHand").innerHTML = ("Dealer Bust");
     }
 }
-
-// document.getElementsByClassName('btn').addEventListener("click", hit());
 
 
 
@@ -113,5 +117,4 @@ console.log('Player Hand: ' + playerHand);
 console.log('Player Hand total: ' + handTotal(playerHand))
 console.log('Dealer Hand: ' + dealerHand)
 console.log('Dealer Hand total: ' + handTotal(dealerHand))
-// let playerHand = [];
-// let dealerHand = [];
+

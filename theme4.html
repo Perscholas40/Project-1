@@ -9,22 +9,23 @@
     <script src="/app.js" defer></script>
 </head>
 <body>
-        <div id="actionButtons">
-                <button id="deal" class="btn">Deal</button>
-                <button id="hit" class="btn">Hit</button>
-                <button id="stand" class="btn">Stand</button>
-            </div>
+    <div id="actionButtons">
+        <button id="deal" class="btn" onclick="drawCard(cardDeck)">Deal</button>
+        <button id="hit" class="btn">Hit</button>
+        <button id="stand" class="btn">Stand</button>
+    </div>
+
+<!-- Card Table -->
+    <div class="cardTableHawks">
         
-        <!-- Card Table -->
-            <div class="cardTableHawks">
-                <div id="dealer">
-                    <div id="dealerHand"></div>
-                </div>
-              
-                <div id="player">
-                    <div id="playerHand"></div>
-                </div>
-            </div>
-        
+    <div class="dealer">
+        <div id="dealerHand">dealer</div>
+    </div>
+      
+    <div class="player">
+        <div id="playerHand">player</div>
+    </div>
+
+</div>
 </body>
 </html>
