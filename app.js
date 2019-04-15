@@ -84,6 +84,7 @@ function drawCard(cardDeck){
     return cardDeck[randomCards];
     function getHand(cardDeck){
         document.getElementsByClassName("dealerHand").innerHTML = drawCard(cardDeck);
+        document.getElementsByClassName("playerHand").innerHTML = drawCard(cardDeck);
     }
 }
 //Makes beginning hand for dealer and player
@@ -104,12 +105,18 @@ function handTotal(hand){
 // Hit Function
     function hit(){
     playerHand.push(drawCard(cardDeck));
-        document.onclick.getElementsByClassName("dealerHand").innerHTML = drawCard(cardDeck);
+        document.onclick.getElementByID("playerHand").innerHTML = drawCard(cardDeck);
     if(handTotal(playerHand) > 21){
-        document.getElementsByClassName("dealerHand").innerHTML = ("Dealer Bust");
+        document.getElementByID("playerHand").innerHTML = ("You Bust");
     }
 }
-
+function hit(){
+    playerHand.push(drawCard(cardDeck));
+        document.onclick.getElementByID("dealerHand").innerHTML = drawCard(cardDeck);
+    if(handTotal(playerHand) > 21){
+        document.getElementByID("dealerHand").innerHTML = ("You Bust");
+    }
+}
 
 
 gameBegin();
